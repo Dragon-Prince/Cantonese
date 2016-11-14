@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+}
+body{
+	font-family:kaiti;
+}
+h1{
+    font-size:23px;
+}
+img{
+	transition: all 0.3s;
+}
+.kuang{
+	 width: 390px;
+    height: 252px;
+	border: 4px solid white;
+    overflow: hidden;
+}
+.kuang:hover >.image{
+opacity: 0.6;
+}
+.kuang:hover >.texiao2{
+opacity: 1;
+top:-62%;
+}
+.kuang:hover>.texiao2>h2{
+    opacity: 1;
+}
+.kuang:hover>.texiao2>span{
+    opacity: 1;
+}
+#big_img{
+        width: 46%;
+    height: 60%;
+    background-color: gary;
+    /* position: fixed; */
+    /* margin: auto; */
+    z-index: 99;
+     /*background-color: red; */
+    position:fixed;
+    opacity: 0;
+    top:20%;
+    left:450px;
+    display: none;
+}
+.close{
+   position: absolute;
+    z-index: 100;
+    float: right;
+    top: 6px;
+    right: -7px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.image{
+	width: 100%;
+    height:100%;
+}
+.datu{
+    width:100%;
+    height:100%;
+}
+.scrollbox{
+	width: 44%;
+    margin: auto;
+	margin-top: 144px;
+    padding-bottom: 84px;
+    border-bottom: 1px solid #939393;
+    opacity: 0;
+    transition: all 2s;
+}
+.title{
+ 	position: relative;
+    color: white;
+       top: 116px;
+    font-size: 49px;
+    letter-spacing: 10px;text-align: center;
+}
+.bj{
+	background-image: url('http://www.matsusakaushi-yoshida.jp/img/common/body_bg.jpg');
+	width: 100%;
+    top: 65px;
+    padding-bottom: 112px;
+}
+.scrollbox p,h1{
+	word-wrap: break-word;
+	color:white;
+	margin-top: 56px;
+}
+.scrollbox >p{
+	font-size: 15px;
+}
+.next_box{
+    width: 245px;
+    height: 50px;
+    background-color: #C99E61;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size:17px;
+    overflow: hidden;
+}
+.left{
+	position: relative;
+	left:30px;
+	transition: all 0.5s;
+	z-index:99;
+}
+.next_box:hover>.left {
+left:72px;
+}
+.next_box:hover>.texiao{
+	left:0%;
+}
+.texiao2{
+	width: 146px;
+    height: 46px;
+    margin:auto;
+    position: relative;
+     top: -50%; 
+    opacity: 0;
+    font-size: 17px;
+    line-height: 46px;
+    background-color: white;
+    text-align: center;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.texiao{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #E8B265;
+    /* z-index: 2; */
+    top: -100%;
+    transition: all 0.3s;
+}
+.next{
+	position: relative;
+	z-index: 99;
+}
+.top{
+	    margin-top: 15px;
+    margin-left: 50%;
+    cursor: pointer;
+}
